@@ -4,11 +4,9 @@ import Home from "./Components/Home"
 function App() {
   return (
     <div className="App">
-      Hello World
-      <Route path ="/">
-      <Home/>
-      </Route> 
-      
+      <Switch>
+      <Route path ="/" component={Home}/>
+      </Switch>      
     </div>
   );
 }
