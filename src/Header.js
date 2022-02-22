@@ -22,6 +22,33 @@ function Header() {
         </div>
 
         {/* 3 links */}
+        <div className="headerNav">
+            {/* 1st link */}
+            <Link to="/login" className="header__link">
+                <div className="header__option">
+                    <span>Hello Tenzin</span>
+                    <span>Sign in</span>
+                </div>
+            </Link>
+
+            {/* 2nd link */}
+            <Link to="/" className="header__link">
+                <div className="header__option">
+                    <span>Returns</span>
+                    <span>& Orders</span>
+                </div>
+            </Link>
+
+            {/* 3rd link */}
+            <Link to="/" className="header__link">
+                <div className="header__option">
+                    <span>Your</span>
+                    <span>Prime</span>
+                </div>
+            </Link>
+
+            {/* 4th link */}
+        </div>
         {/* basket icon with number */}
     </nav>
   )
