@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Header.css";
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import SearchIcon from '@material-ui/icons/Search';
 
 function Header() {
   return (
@@ -15,6 +16,9 @@ function Header() {
         </Link>
 
         {/* Search box */}
+        <input type="text" className="header__searchInput" />
+        <SearchIcon className="header__searchIcon"/>
+
         {/* 3 links */}
         {/* basket icon with number */}
     </nav>
