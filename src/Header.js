@@ -16,8 +16,10 @@ function Header() {
         </Link>
 
         {/* Search box */}
-        <input type="text" className="header__searchInput" />
-        <SearchIcon className="header__searchIcon"/>
+        <div className="header__search">
+            <input type="text" className="header__searchInput" />
+            <SearchIcon className="header__searchIcon"/>
+        </div>
 
         {/* 3 links */}
         {/* basket icon with number */}
