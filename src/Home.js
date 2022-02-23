@@ -16,7 +16,7 @@ function Home() {
           title="The lean startup:"
           price={11.96}
           rating={5}
-          image="https://www.junglescout.com/wp-content/uploads/2021/01/product-photo-main-image-1.2.png"
+          image="https://images-na.ssl-images-amazon.com/images/I/410llGwMZGL._SX328_BO1,204,203,200_.jpg"
         />
         {/* Products */}
     </div>
