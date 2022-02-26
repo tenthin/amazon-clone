@@ -26,26 +26,25 @@ const reducer = (state, action) => {
                 ...state,
                 basket: [...state.basket, action.item]
             }
-        case 'REMOVE_TO_BASKET':
-            // Logic for Removing item from basket
-
+        case "REMOVE_FROM_BASKET":
+            const index = state.basket.findIndex(
+                (basketItem) => basketItem.id === action.id
+            );
             let newBasket = [...state.basket];
 
-            const index = state.basket.findIndex((basketItem) => basketItem.id === action.id);
-
-            if(index >= 0) {
-                // item exist in basket, remove it...
+            if (index >= 0) {
                 newBasket.splice(index, 1);
-            } else{
+
+            } else {
                 console.warn(
-                    `Can't remove product (id: ${action.id}) as its not in basket!`
-                );
+                    `Cant remove product (id: ${action.id}) as its not in basket!`
+                )
             }
 
             return {
                 ...state,
                 basket: newBasket
-            };
+            }
         default:
             return state;
     }
