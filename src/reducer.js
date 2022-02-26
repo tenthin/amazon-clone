@@ -15,7 +15,11 @@ export const initialState = {
             image:"https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
         }
     ],
+    user:null,
 };
+
+export const getBasketTotal = (basket) => 
+basket?.reduce((amount,item) => item.price + amount,0);
 
 const reducer = (state, action) => {
     console.log(action);
